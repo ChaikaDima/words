@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>App for lerning</title>
+  </head>
+  <body>
+    <div class="close_box">
+      <div class="close"></div>
+    </div>
+
+    <div class="navigation_panel">
+      <ul class="nav_list">
+        <li class="li_nav active">Home</li>
+        <li class="li_nav">Add words</li>
+        <li class="li_nav">Rules</li>
+      </ul>
+    </div>
+    <div class="sections">
+      <div class="active1 section1">
+        <div class="container_home">
+          <div class="inc_word">Incoming word</div>
+          <div class="trln_word">Translation word</div>
+          <div class="wrapper_btn">
+            <div class="btn_trln">Translate</div>
+            <div class="btn_next">Next</div>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="container_add_words">
+          <div class="wrapper_input">
+            <form onsubmit="return false" class="form" action="">
+              <input
+                autofocus
+                class="input"
+                type="text"
+                value=""
+                placeholder="Write a new word - translation"
+              />
+            </form>
+            <div class="btn_container">
+              <div class="btn_add">Add</div>
+              <div class="btn_delete_last">Delete last</div>
+            </div>
+          </div>
+          <div class="wrapper_lists_of_array"></div>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="wrapper_rules">
+          <span class="row_new">Rules:</span>As you learn a language, you can
+          add new words to the app on the add words page. after adding a word,
+          it gets into the list of new words. On the main page, words are
+          displayed in random order from a list of new words. if you don't know
+          a word, then when you press the i don't know button, this word gets
+          into a separate list, with which you can later practice separately,
+          having previously selected it on the main page.
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
